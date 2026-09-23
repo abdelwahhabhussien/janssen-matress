@@ -1,0 +1,114 @@
+/* ================================================================== 
+STRUCTURE & RESPONSIBILITIES
+==================================================================== */
+/* 
+{- swiper common css start - swiper common css end}
+*/
+/* ==================================================================== */
+
+/* swiper common css start */
+.swiper-section {
+  width: 100%;
+}
+
+.swiper-section-flex {
+  position: relative;
+  width: 100%;
+}
+
+.swiper {
+  width: 100%;
+  height: 27rem;
+}
+
+.swiper-slide {
+  font-size: 18px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+
+.swiper-buttons {
+  position: absolute;
+  top: 50%;
+  transform: translateY(-50%) !important;
+  left: 0%;
+  display: flex;
+  justify-content: space-between;
+  gap: 10px;
+  z-index: 10;
+  width: 100%;
+  pointer-events: none;
+}
+
+.custom-swiper-button {
+  width: 40px;
+  height: 40px;
+  background-color: white;
+  box-shadow: 0 0 2.5px rgba(0, 0, 0, 0.25);
+  border-radius: 50%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  transition: all 0.3s ease;
+  color: rgb(0, 0, 0);
+  font-size: 2rem;
+  pointer-events: auto;
+}
+
+@media(pointer: fine) {
+  .custom-swiper-button:hover {
+    transform: scale(1.1);
+  }
+}
+
+@media(pointer: coarse) {
+  .custom-swiper-button:active {
+    transform: scale(0.95);
+  }
+}
+
+
+.swiper-custom-pagination {
+  position: absolute;
+  bottom: -60px;
+  left: 0;
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  gap: 8px;
+  z-index: 10;
+}
+
+.custom-pagination-bullet {
+  width: 12px;
+  height: 12px;
+  background-color: rgba(255, 98, 98, 0.3);
+  border-radius: 50%;
+  cursor: pointer;
+  transition: all 0.3s ease;
+  border: none;
+  padding: 0;
+}
+
+.swiper-custom-pagination button {
+  flex: 0 0 auto;
+}
+
+.custom-pagination-bullet:hover {
+  background: rgba(0, 0, 0, 0.5);
+}
+
+.custom-pagination-bullet.active {
+  background: #000000;
+}
+
+
+.swiper-button-next,
+.swiper-button-prev,
+.swiper-pagination {
+  display: none !important;
+}
+
+/* swiper common css end */

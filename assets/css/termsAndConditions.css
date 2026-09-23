@@ -1,0 +1,150 @@
+/* ================================================================== 
+STRUCTURE & RESPONSIBILITIES
+==================================================================== */
+/*
+{- typography & text element classes
+  - specific section design
+}
+*/
+/* ==================================================================== */
+
+
+
+
+
+/* =========================================
+3. TYPOGRAPHY & TEXT ELEMENT CLASSES
+========================================= */
+
+.section-title {
+  font-size: 2.3rem;
+  font-weight: 500;
+  margin-bottom: 2rem;
+  padding-bottom: 1rem;
+  border-bottom: 0.2rem solid #e2e8f0;
+  color: #000000;
+  line-height: 1.2;
+  margin-top: 0;
+  width: 100%;
+}
+
+.sub-title {
+  font-size: 2.2rem;
+  font-weight: 500;
+  margin-bottom: 1.2rem;
+  margin-top: 2rem;
+  color: #1a202c;
+  line-height: 1.2;
+}
+
+.body-text {
+  font-size: 1.6rem;
+  margin-bottom: 1.6rem;
+  color: #333333;
+  width: 100%;
+}
+.main-point{
+  margin-bottom: 0;
+}
+
+.main-point-details {
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  gap: 1.5rem;
+  padding: 4rem 0;
+}
+
+.meta-label {
+  display: block;
+  font-size: 2.5rem;
+  font-weight: 600;
+  text-transform: uppercase;
+  color: #000000;
+}
+
+.date-label {
+  font-size: 1.4rem;
+  color: #616264;
+  margin-bottom: 0;
+}
+
+/* List Styling */
+.legal-list {
+  font-size: 1.6rem;
+  padding-left: 2.5rem;
+  margin-bottom: 1.6rem;
+  width: 100%;
+}
+
+.legal-item {
+  margin-bottom: 0.8rem;
+  color: #333333;
+}
+
+/* Link Styling */
+.nav-link {
+  color: #3182ce;
+  text-decoration: none;
+  transition: color 0.2s ease;
+  font-size: 1.6rem;
+}
+
+.nav-link:hover {
+  color: #2b6cb0;
+  text-decoration: underline;
+}
+
+.text-strong {
+  color: #2d3748;
+  font-weight: bold;
+  font-weight: 600;
+}
+
+
+/* =========================================
+4. SPECIFIC SECTION DESIGN CLASSES
+========================================= */
+
+
+/* --- HERO SECTION --- */
+.hero-section {
+  background-color: #ffffff;
+  padding-top: 3rem;
+  padding-bottom: 3rem;
+}
+
+
+
+/* --- CONTENT BLOCK DESIGN --- */
+.content-section {
+  /* Padding handled inside the card */
+  margin-bottom: 1rem;
+}
+
+.content-card {
+  border-radius: 0.8rem;
+  /* Override global layout-flex alignment for text blocks */
+  align-items: flex-start;
+  /* Align content to top */
+  justify-content: flex-start;
+  /* Align content to left */
+}
+
+
+/* --- CONTACT CARD DESIGN --- */
+.contact-card {
+  background-color: #ebf8ff;
+  border: 1px solid #bee3f8;
+  padding: 4rem;
+  border-radius: 0.8rem;
+  box-shadow: 0 0.4rem 0.6rem -0.1rem rgba(0, 0, 0, 0.05);
+
+  align-items: flex-start;
+  justify-content: flex-start;
+}
+
+.contact-title {
+  border-bottom-color: #90cdf4;
+  width: 100%;
+}

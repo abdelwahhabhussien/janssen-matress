@@ -1,0 +1,215 @@
+/* ================================================================== 
+STRUCTURE & RESPONSIBILITIES
+==================================================================== */
+/*
+{- shippingInfo page start - cart page end
+  - shippingInfo page titles
+  - shippingInfo page container
+    - shipping details
+    - shipping checkout details
+  - shipping page breakpoints
+}
+*/
+/* ==================================================================== */
+
+
+
+/* shippingInfo page start */
+.shippingInfo-section {
+    margin-top: 3rem;
+}
+
+.shippingInfo-section-flex {
+    gap: 3rem;
+}
+
+/* shippingInfo page titles start */
+.shippingInfo-page-titles {
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    gap: 3rem;
+}
+
+.shippingInfo-title {
+    font-size: 2.3rem;
+    font-weight: 500;
+    border-bottom: 2px solid black;
+    padding-bottom: 3rem;
+}
+
+.shippingInfo-subtitle {
+    font-size: 1.4rem;
+    color: #000000;
+}
+
+/* shippingInfo page container start */
+.shippingInfo-page-container {
+    display: flex;
+    justify-content: space-between;
+    gap: 7rem;
+    width: 100%;
+    margin-top: 3rem;
+}
+
+
+/* shipping details start */
+.shipping-details {
+    flex: 3.7;
+}
+
+.shipping-details-form {
+    display: flex;
+    flex-direction: column;
+    gap: 4rem;
+    width: 100%;
+}
+
+.details-form-items {
+    display: flex;
+    justify-content: space-between;
+    width: 100%;
+    gap: 3rem;
+}
+
+.details-column {
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    gap: 0.8rem;
+}
+
+.details-column input {
+    height: 5rem;
+    border: 1px solid #cacacc;
+    border-radius: 6px;
+    padding: 2rem 1.5rem;
+}
+
+.details-column input:focus-within {
+    border: 1px solid black;
+}
+
+.details-column label {
+    font-size: 1.4rem;
+}
+
+
+
+.details-form-submit {
+    flex-direction: column;
+}
+
+.details-form-billing-address {
+    display: flex;
+    flex-direction: column;
+    gap: 3rem;
+}
+
+.billing-address-title {
+    font-size: 1.7rem;
+    font-weight: 500;
+}
+
+.billing-address-check {
+    display: flex;
+    align-items: center;
+    gap: 0.5rem;
+    font-size: 1.4rem;
+    user-select: none;
+    cursor: pointer;
+    -webkit-tap-highlight-color: transparent;
+    -ms-touch-action: manipulation;
+    touch-action: manipulation;
+}
+
+.billing-address-check input {
+    width: 1.7rem;
+    height: 1.7rem;
+}
+
+.details-form-submit-btn {
+    background-color: #FF4259;
+    color: white;
+    font-size: 1.5rem;
+    height: 4.8rem;
+    border-radius: 0.5rem;
+}
+/* shipping details end */
+
+
+
+/* shipping checkout details start */
+.shipping-checkout-details {
+    flex: 1.5;
+    background-color: rgb(255, 255, 255);
+    border: 1px solid #dfdfdf;
+    height: fit-content;
+    position: sticky;
+    top: 10rem;
+    padding: 2rem;
+    display: flex;
+    flex-direction: column;
+    gap: 5rem;
+    border-radius: 1rem;
+}
+
+.shipping-page-checkout-title {
+    font-size: 1.7rem;
+    font-weight: 500;
+    border-bottom: 1px solid #A39999;
+    padding-bottom: 2.5rem;
+}
+
+.shipping-page-checkout-content {
+    display: flex;
+    flex-direction: column;
+    gap: 5rem;
+}
+
+.shipping-page-checkout-subtotal,
+.shipping-page-checkout-delivery,
+.shipping-page-checkout-total {
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    font-size: 1.5rem;
+    font-weight: 500;
+}
+
+.shipping-page-checkout-border-line {
+    border-bottom: 1px solid #A39999;
+    width: 100%;
+}
+/* shipping checkout details end */
+/* shippingInfo page container end */
+
+/* shipping page breakpoints start */
+@media(max-width: 1000px) {
+    .shippingInfo-page-container {
+        gap: 5rem;
+    }
+}
+
+@media(max-width: 800px) {
+    .shippingInfo-page-container {
+        flex-direction: column-reverse;
+    }
+
+    .shipping-checkout-details {
+        position: static;
+    }
+}
+
+@media(max-width: 460px) {
+
+    .details-form-items {
+        flex-direction: column;
+        gap: 4rem;
+    }
+}
+
+/* shipping page breakpoints end */
+
+/* shippingInfo page end */
