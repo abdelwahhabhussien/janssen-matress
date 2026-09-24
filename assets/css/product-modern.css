@@ -51,3 +51,7 @@ html{scroll-behavior:smooth}body{overflow-x:hidden}.container{width:min(1180px,c
   .cart-added-actions{grid-template-columns:1fr}
   .cart-added-product img{width:70px;height:62px}
 }
+
+/* V27 mobile header + image/cart reliability fixes */
+@media (max-width:900px){.nav-actions{display:flex!important;align-items:center;gap:8px}.nav-actions .nav-call{display:none!important}.nav-actions .mobile-cart-link{display:inline-flex!important;align-items:center;justify-content:center}.nav-actions .menu-btn{display:grid!important;align-items:center;justify-content:center}.nav-inner{min-height:70px}}
+@media (max-width:650px){.product-visual-stage{touch-action:pan-y!important;overflow:visible!important}.product-3d{touch-action:pan-y!important}.product-3d img{touch-action:pan-y!important;max-width:100%;height:auto;object-fit:contain}.cart-item img{object-fit:contain!important;background:#f7f8fa}}

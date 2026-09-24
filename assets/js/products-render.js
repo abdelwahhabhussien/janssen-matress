@@ -6,7 +6,7 @@ const inPages=location.pathname.includes('/pages/');
 const base=inPages?'./':'./pages/';
 const href=id=>base+'product.html?id='+encodeURIComponent(id);
 const asset=u=>{if(!u)return '';if(/^https?:\/\//i.test(u)||u.startsWith('../')||u.startsWith('./')||u.startsWith('/'))return u;return inPages?'../'+u:'./'+u};
-const fallback=p=>asset(p.fallbackImage||'assets/images/mattress-placeholder.svg');
+const fallback=p=>asset(p.fallbackImage&& !String(p.fallbackImage).includes('mattress-placeholder') ? p.fallbackImage : 'assets/images/hero/mattress-3d.png');
 function card(p){return `<article class="catalog-card reveal"><a class="catalog-image" href="${href(p.id)}" aria-label="${p.name}"><img src="${asset(p.image)}" alt="${p.name}" loading="lazy" referrerpolicy="no-referrer" onerror="this.onerror=null;this.src='${fallback(p)}'"><span class="catalog-image-badge">عرض التفاصيل</span></a><div class="catalog-body"><span class="catalog-tag">${p.category}</span><h3>${p.name}</h3><div class="catalog-review"><span>${p.reviewCount||0} مراجعة مرجعية</span></div><p class="catalog-price">يبدأ من <strong>${money(p.price)}</strong></p><p class="catalog-meta">${p.height&&p.height!=='—'?'ارتفاع '+p.height+' • ':''}${p.sizes.length} مقاسات عرض • متاح بكل المقاسات</p><div class="catalog-actions"><a class="btn btn-primary small" href="${href(p.id)}">التفاصيل والمقاسات</a><a class="catalog-wa" target="_blank" rel="noopener" href="https://wa.me/201014158303?text=${encodeURIComponent('مرحبًا، أريد الاستفسار عن '+p.name)}">واتساب</a></div></div></article>`}
 const grid=document.querySelector('#catalogGrid'), home=document.querySelector('#homeProducts');
 if(home)home.innerHTML=products.slice(0,8).map(card).join('');
