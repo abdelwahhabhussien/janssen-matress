@@ -3,6 +3,9 @@
   const API_URL='https://script.google.com/macros/s/AKfycbw4b8TyQlShSQJ72xL_dPoklH7gp65D2yQBRV9Jt5BMLfW76d9yDwTeLM2LeXHJQp0Jdg/exec';
   const products=window.JANSSEN_PRODUCTS||[];
   const root=document.getElementById('cartItems');
+  const recommendationRoot=document.getElementById('cartRecommendation');
+  // Change this ID whenever you want to control the featured upsell product.
+  const RECOMMENDATION_PRODUCT_ID='extra-gold';
   const money=n=>new Intl.NumberFormat('ar-EG').format(Number(n)||0)+' جنيه';
   const get=()=>JSON.parse(localStorage.getItem(key)||'[]');
   const save=c=>{localStorage.setItem(key,JSON.stringify(c));render();updateCount();};
@@ -20,20 +23,67 @@
   }
   function validPhone(v){return /^(010|011|012|015)\d{8}$/.test(v);}
 
+  function productImageUrl(p){
+    if(!p?.image) return '';
+    const u=String(p.image);
+    if(/^https?:\/\//i.test(u)||u.startsWith('../')||u.startsWith('./')||u.startsWith('/')) return u;
+    return '../'+u;
+  }
+
+  function renderRecommendation(cart){
+    if(!recommendationRoot) return;
+    if(!cart.length){ recommendationRoot.innerHTML=''; return; }
+
+    let p=products.find(x=>x.id===RECOMMENDATION_PRODUCT_ID && !cart.some(i=>i.id===x.id));
+    if(!p) p=products.find(x=>!cart.some(i=>i.id===x.id));
+    if(!p){ recommendationRoot.innerHTML=''; return; }
+
+    const width=String(p.sizes?.[0]||'');
+    const length=String(p.lengths?.[0]||'');
+    const price=Number(p.pricesByWidth?.[width]??p.price)||0;
+    recommendationRoot.innerHTML=`<section class="cart-recommendation" aria-label="اقتراح إضافي">
+      <div class="recommendation-copy"><span class="section-kicker">اقتراح لك</span><h2>قد يناسبك أيضًا</h2><p>ممكن تضيف المنتج ده لطلبك قبل تأكيد الشراء.</p></div>
+      <div class="recommendation-card">
+        <img src="${productImageUrl(p)}" alt="${p.name}" loading="lazy" referrerpolicy="no-referrer" onerror="this.onerror=null;this.src='${p.fallbackImage?.startsWith('assets/')?'../'+p.fallbackImage:(p.fallbackImage||'../assets/images/mattress-placeholder.svg')}'">
+        <div class="recommendation-info"><h3>${p.name}</h3><span>عرض ${width} سم • متاح كل المقاسات</span><strong>${money(price)}</strong></div>
+        <div class="recommendation-actions">
+          <button type="button" class="btn btn-primary" data-recommend-add>إضافة للسلة</button>
+          <button type="button" class="recommendation-dismiss" data-recommend-dismiss>لا، شكرًا</button>
+        </div>
+      </div>
+    </section>`;
+
+    recommendationRoot.querySelector('[data-recommend-dismiss]')?.addEventListener('click',()=>{
+      recommendationRoot.innerHTML='';
+    });
+    recommendationRoot.querySelector('[data-recommend-add]')?.addEventListener('click',()=>{
+      const c=get();
+      const key=p.id+'-'+width+'-'+length;
+      const existing=c.find(i=>i.key===key);
+      if(existing) existing.qty++;
+      else c.push({key,id:p.id,name:p.name,width,length,price,qty:1});
+      save(c);
+      recommendationRoot.innerHTML=`<div class="recommendation-added">✓ تمت إضافة <strong>${p.name}</strong> إلى السلة.</div>`;
+      setTimeout(()=>renderRecommendation(get()),1200);
+    });
+  }
+
   function render(){
     const cart=get();
     if(!cart.length){
       root.innerHTML='<div class="empty-cart"><h2>السلة فاضية</h2><p>اختار مرتبة ومقاس من الكتالوج وأضفها للسلة.</p><a class="btn btn-primary" href="./products.html">شوف المراتب</a></div>';
       document.getElementById('cartTotal').textContent='0 جنيه';
+      renderRecommendation([]);
       return;
     }
     let total=0;
-    root.innerHTML='<div class="cart-list">'+cart.map((i,idx)=>{const p=products.find(x=>x.id===i.id);const sub=(Number(i.price)||0)*(Number(i.qty)||0);total+=sub;return `<div class="cart-item"><img src="../${p?.image||''}" alt="${i.name||p?.name||''}"><div><h3>${i.name||p?.name||''}</h3><div class="cart-meta">العرض: ${i.width} سم × الطول: ${i.length} سم<br>سعر الوحدة: ${money(i.price)}</div><div class="cart-price">${money(sub)}</div></div><div class="cart-side"><div class="qty"><button type="button" data-minus="${idx}">−</button><span>${i.qty}</span><button type="button" data-plus="${idx}">+</button></div><button type="button" class="remove" data-remove="${idx}">حذف</button></div></div>`}).join('')+'</div>';
+    root.innerHTML='<div class="cart-list">'+cart.map((i,idx)=>{const p=products.find(x=>x.id===i.id);const sub=(Number(i.price)||0)*(Number(i.qty)||0);total+=sub;return `<div class="cart-item"><img src="${productImageUrl(p)}" alt="${i.name||p?.name||''}" loading="lazy" referrerpolicy="no-referrer" onerror="this.onerror=null;this.src='${p?.fallbackImage?.startsWith('assets/')?'../'+p.fallbackImage:(p?.fallbackImage||'../assets/images/mattress-placeholder.svg')}'"><div><h3>${i.name||p?.name||''}</h3><div class="cart-meta">العرض: ${i.width} سم × الطول: ${i.length} سم<br>سعر الوحدة: ${money(i.price)}</div><div class="cart-price">${money(sub)}</div></div><div class="cart-side"><div class="qty"><button type="button" data-minus="${idx}">−</button><span>${i.qty}</span><button type="button" data-plus="${idx}">+</button></div><button type="button" class="remove" data-remove="${idx}">حذف</button></div></div>`}).join('')+'</div>';
     document.getElementById('cartTotal').textContent=money(total);
     document.getElementById('transferAmount').textContent=money(total);
     root.querySelectorAll('[data-minus]').forEach(b=>b.onclick=()=>{const c=get(),i=+b.dataset.minus;c[i].qty=Math.max(1,Number(c[i].qty)-1);save(c);syncPayment();});
     root.querySelectorAll('[data-plus]').forEach(b=>b.onclick=()=>{const c=get(),i=+b.dataset.plus;c[i].qty=Number(c[i].qty)+1;save(c);syncPayment();});
     root.querySelectorAll('[data-remove]').forEach(b=>b.onclick=()=>{const c=get();c.splice(+b.dataset.remove,1);save(c);syncPayment();});
+    renderRecommendation(cart);
   }
 
   function syncPayment(){
