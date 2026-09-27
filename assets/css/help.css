@@ -1,0 +1,447 @@
+/* ================================================================== 
+STRUCTURE & RESPONSIBILITIES
+==================================================================== */
+/*
+{- help hero sectin start - help hero sectin end
+- help quick link start - help quick link end
+- help category start - help category end
+  -help topics grid
+    -help topics category
+    -help topics
+- contact cta
+  
+}
+*/
+/* ==================================================================== */
+
+
+/* help hero sectio start */
+.help-hero {
+    height: 31.4rem;
+    border-bottom: 1px solid #E6E6E6;
+}
+
+.help-hero-flex {
+    gap: 2.5rem;
+}
+
+.help-hero-title {
+    font-size: 3.3rem;
+    font-weight: 600;
+    text-align: center;
+    line-height: 5rem;
+}
+
+.hero-help-subtitle {
+    text-align: center;
+    font-size: 1.7rem;
+    color: #6b7280;
+    line-height: 3.5rem;
+    margin-bottom: 0.5rem;
+}
+
+.help-search {
+    max-width: 600px;
+    width: 100%;
+    height: 52px;
+    position: relative;
+}
+
+.help-search button {
+    position: absolute;
+    top: 50%;
+    left: 1rem;
+    transform: translateY(-50%);
+    background-color: transparent;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.help-search button svg {
+    color: rgb(70, 67, 67);
+}
+
+.help-search input {
+    width: 100%;
+    height: 100%;
+    font-size: 1.5rem;
+    border-radius: 10rem;
+    box-shadow: 0 0 2.5px rgb(0, 0, 0, 0.2);
+    border: 1px solid #e5e7eb;
+    padding-left: 4.5rem;
+}
+
+.help-search input:focus-within {
+    box-shadow: 0 0 5px 1px rgb(0, 0, 252, 0.3);
+}
+
+
+
+/* help hero section end */
+
+
+/* help quick links start */
+.help-quick-links {
+    margin-top: 7rem;
+}
+
+.help-quick-links-flex {
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    gap: 2rem;
+    width: 100%;
+}
+
+.help-quick-link {
+    color: black;
+    background-color: white;
+    box-shadow: 0 0 4px rgb(0, 0, 0, 0.2);
+    padding: 4rem 2rem;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    gap: 1.5rem;
+    transition: all 0.2s ease-in-out;
+}
+
+@media(pointer: fine) {
+    .help-quick-link:hover {
+        transform: scale(1.04);
+        border: 1px solid blue;
+    }
+}
+
+@media(pointer: coarse) {
+    .help-quick-link:active {
+        transform: scale(1.04);
+        border: 1px solid blue;
+    }
+}
+
+.help-quick-link-row1 {
+    background-color: rgb(247, 227, 227);
+    width: 4.5rem;
+    height: 4.5rem;
+    border-radius: 50%;
+    display: flex;
+    align-items: center;
+    justify-content: center
+}
+
+.help-quick-link-row2 {
+    font-size: 1.9rem;
+    font-weight: 500;
+}
+
+.help-quick-link-row3 {
+    font-size: 1.4rem;
+}
+
+@media(max-width: 1145px) {
+    .help-quick-links-flex {
+        grid-template-columns: repeat(2, 1fr);
+    }
+}
+
+@media(max-width: 600px) {
+    .help-quick-links-flex {
+        grid-template-columns: repeat(1, 1fr);
+    }
+}
+
+/* help quick links end */
+
+
+/* help category section start */
+.help-topics-section {
+    margin-top: 7rem;
+}
+
+.help-topics-header {
+    border-bottom: 1px solid #d7d6d6;
+    width: 100%;
+    display: flex;
+    align-items: center;
+    height: 7rem;
+}
+
+.topics-title {
+    font-size: 2rem;
+    font-weight: 500;
+    flex: 1;
+    min-width: 307px;
+}
+
+.topic-category {
+    font-size: 2rem;
+    font-weight: 500;
+    flex: 3;
+    padding-left: 3rem;
+}
+.min-topics-title,
+.min-topics-category{
+    display: none;
+}
+/* help topics grid start */
+
+.topics-content-grid {
+    border: none;
+    display: flex;
+    width: 100%;
+    font-size: 1.5rem;
+    padding-bottom: 2rem;
+}
+
+.help-topics-category {
+    flex: 1;
+}
+
+.help-topics {
+    flex: 3;
+    border-left: 1px solid #d7d6d6;
+}
+
+/* help topics category start */
+.help-topics-category {
+    display: flex;
+    flex-direction: column;
+    height: 100%;
+    gap: 1rem;
+    padding-top: 2rem;
+    padding-right: 1.5rem;
+    min-width: 307px;
+}
+
+.help-topics-category button {
+    font-size: 1.5rem;
+    padding: 1.2rem 1.5rem;
+    border-radius: 1rem;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    justify-content: flex-start;
+    gap: 0.7rem;
+    background-color: transparent;
+    transition: all 0.2s ease;
+}
+
+@media(pointer: fine) {
+    .help-topics-category button:hover {
+        background-color: #eef1f6;
+    }
+}
+
+.help-topics-category button span {
+    display: flex;
+    align-self: center;
+    justify-content: center;
+}
+
+.help-topics-category button.open {
+    background-color: #eef1f6;
+}
+/* help topics category end */
+
+/* help topics start */
+.help-topics {
+    padding-top: 2rem;
+    padding-left: 1.5rem;
+}
+
+.help-topics-items {
+    display: none;
+    flex-direction: column;
+    gap: 2rem;
+}
+.help-topics-items.open{
+    display: flex;
+}
+
+.help-topics-item {
+    border: 1px solid #d7d6d6;
+    border-radius: 0.5rem;
+}
+
+
+.help-topics-btn {
+    padding: 0 2rem;
+    height: 7rem;
+    border-radius: 0.5rem;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    background-color: transparent;
+    width: 100%;
+    font-size: 1.5rem;
+}
+
+.help-topics-btn span {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    position: relative;
+}
+
+.help-topics-btn-plus-svg,
+.help-topics-btn-minus-svg {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translateX(-50%) translateY(-50%);
+}
+
+.help-topics-btn-plus-svg {
+    max-height: 1000px;
+    transition: all 0.3s ease;
+}
+.help-topics-btn-plus-svg.open {
+    max-height: 0;
+    transform: translateX(-50%) translateY(-50%) rotate(90deg);
+    transition: all 0.3s ease;
+}
+
+.help-topics-btn-minus-svg {
+    max-height: 0;
+    transition: all 0.5s ease;
+}
+
+.help-topics-btn-minus-svg.open {
+    max-height: 1000px;
+}
+
+
+
+.help-topics-dropdown {
+    border-radius: 0.5rem;
+    line-height: 3rem;
+    font-size: 1.5rem;
+    font-weight: 300;
+    max-height: 0;
+    overflow: hidden;
+    transition: max-height 0.3s ease;
+}
+
+.help-topics-dropdown.open {
+    max-height: 1000px;
+    border-top: 1px solid #d7d6d6;
+    transition: max-height 1s ease;
+}
+
+.help-topics-dropdown-flex {
+    padding: 2rem;
+}
+/* help topics end */
+
+/* help topics grid end */
+
+/* help category section breakpoints start */
+@media(max-width: 768px) {
+    .help-topics-header{
+        display: none;
+    }
+    .topics-title{
+        min-width: 150px;
+    }
+    .min-topics-title,
+    .min-topics-category{
+        display: block;
+        margin-bottom: 2rem;
+        border-bottom: 1px solid #d7d6d6;
+        padding-bottom: 2rem;
+        padding-right: 0;
+    }
+
+    .min-topics-category{
+        margin-bottom: 3rem;
+        margin-top: 3rem;
+        padding-left: 0;
+    }
+    .topics-content-grid{
+        flex-direction: column;
+    }
+    .help-topics-category{
+        padding-right: 0;
+    }
+    .help-topics{
+        border-left: none;
+        padding-left: 0;
+    }
+}
+/* help category section breakpoints end */
+
+/* help category section end */
+
+
+
+
+/* contact cta start */
+.contact-cta{
+    margin-top: 7rem;
+}
+.contact-cta-flex{
+    background-color: #eef2ff;
+    background-color: #f5f7fe;
+    min-height: 44rem;
+    text-align: center;
+    gap: 4rem;
+    padding: 2rem;
+    border-radius: 1rem;
+}
+.contact-cta-title{
+    font-size: 2.3rem;
+    font-weight: 600;
+}
+
+.contact-cta-subtitle{
+    font-size: 1.5rem;
+    line-height: 3rem;
+}
+
+.contact-cta-buttons{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 1.5rem;
+}
+.contact-cta-buttons button{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 0.5rem;
+    border-radius: 0.7rem;
+    padding: 1rem 1.5rem;
+}
+.contact-cta-live-btn{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 0.5rem;
+    background-color: black;
+    color: white;
+}
+.contact-cta-email-btn{
+    background-color: transparent;
+    border: 1px solid black;
+    color: black;
+    transition: all 0.3s ease;
+}
+@media(pointer: fine){
+    .contact-cta-email-btn:hover{
+        background-color: black;
+        color: white;
+    }
+}
+@media(pointer: coarse){
+    .contact-cta-email-btn:active{
+        background-color: white;
+        color: black;
+    }
+}
+@media(max-width: 373px){
+    .contact-cta-buttons{
+        flex-direction: column;
+    }
+}
+/* contact cta end */
