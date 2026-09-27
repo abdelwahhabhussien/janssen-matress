@@ -1,1 +1,1 @@
-V27 - cart/mobile fixes on V26: mobile header/cart, robust image fallbacks, product touch scrolling, add-to-cart flow retained
+V29 - checkout delivery areas + Vodafone Cash number + branch map links

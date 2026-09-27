@@ -19,7 +19,7 @@ Sheet: `Reviews`
 الأعمدة: Review ID | Date | Product ID | Product | Customer Name | Rating | Review | Photo | Status
 
 ## العنوان
-71 طريق النصر، مدينة نصر، بجوار طيبة مول
+18 شارع أنور المفتي، مدينة نصر، خلف طيبة مول • 71 طريق النصر، بجوار معرض أبو حتة للسيارات
 
 ## الهاتف
 01014158303
