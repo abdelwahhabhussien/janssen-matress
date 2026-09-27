@@ -746,5 +746,421 @@ window.JANSSEN_PRODUCTS = [
     "reviewCount": 0,
     "fallbackImage": "assets/images/products/fallbacks/joury.svg",
     "officialSpecs": "سوست منفصلة • 255 سوستة/م² • إسفنج سوبر سوفت 3 سم كثافة 30 + إسفنج CNC 10 سم • تستخدم من وجه واحد"
+  },
+  {
+    "id": "long-fiber-pillow",
+    "name": "مخدة طويلة فايبر",
+    "price": 340.0,
+    "category": "إكسسوارات",
+    "subCategory": "وسائد",
+    "sizeMode": "width",
+    "sizes": [
+      "100",
+      "120",
+      "140",
+      "150",
+      "160",
+      "170",
+      "180",
+      "200"
+    ],
+    "lengths": [],
+    "images": [
+      "https://bedjanssen.com/cdn/shop/files/mkhd-toyl-faybr-6962495.png?v=1774815069&width=1356"
+    ],
+    "image": "https://bedjanssen.com/cdn/shop/files/mkhd-toyl-faybr-6962495.png?v=1774815069&width=1356",
+    "url": "https://bedjanssen.com/products/long-fiber-pillow",
+    "reviewCount": 0,
+    "fallbackImage": "assets/images/mattress-placeholder.svg",
+    "pricesByWidth": {
+      "100": 340.0,
+      "120": 410.0,
+      "140": 480.0,
+      "150": 510.0,
+      "160": 540.0,
+      "170": 580.0,
+      "180": 610.0,
+      "200": 680.0
+    }
+  },
+  {
+    "id": "ocean-fiber-pillow",
+    "name": "مخدة فايبر - أوشن",
+    "price": 250.0,
+    "category": "إكسسوارات",
+    "subCategory": "وسائد",
+    "sizeMode": "single",
+    "sizes": [
+      "مقاس واحد"
+    ],
+    "lengths": [],
+    "images": [
+      "https://bedjanssen.com/cdn/shop/files/86574d45-5f23-44d5-8168-ae937f75d360_1024x.jpg?v=1706368356"
+    ],
+    "image": "https://bedjanssen.com/cdn/shop/files/86574d45-5f23-44d5-8168-ae937f75d360_1024x.jpg?v=1706368356",
+    "url": "https://bedjanssen.com/products/fiber-pillow",
+    "reviewCount": 0,
+    "fallbackImage": "https://janssenegypt.com/public/uploads/all/sxJFiEGe8pdJfGgP6dF0P5Px53AgNeUj7GbuQfDH.jpg",
+    "pricesByWidth": {
+      "مقاس واحد": 250.0
+    }
+  },
+  {
+    "id": "waterproof-mattress-protector",
+    "name": "واقى مرتبة ضد الماء",
+    "price": 430.0,
+    "category": "إكسسوارات",
+    "subCategory": "واقي المراتب",
+    "sizeMode": "full",
+    "sizes": [
+      "90×200",
+      "100×200",
+      "120×200",
+      "140×200",
+      "150×200",
+      "160×200",
+      "170×200",
+      "180×200",
+      "200×200"
+    ],
+    "lengths": [],
+    "images": [
+      "https://bedjanssen.com/cdn/shop/files/oak-mrtb-dd-almaaa-4306044.png?v=1774815072&width=1356"
+    ],
+    "image": "https://bedjanssen.com/cdn/shop/files/oak-mrtb-dd-almaaa-4306044.png?v=1774815072&width=1356",
+    "url": "https://bedjanssen.com/products/janssen-waterproof-protector",
+    "reviewCount": 0,
+    "fallbackImage": "assets/images/mattress-placeholder.svg",
+    "pricesBySize": {
+      "90×200": 430.0,
+      "100×200": 470.0,
+      "120×200": 560.0,
+      "140×200": 660.0,
+      "150×200": 700.0,
+      "160×200": 750.0,
+      "170×200": 800.0,
+      "180×200": 840.0,
+      "200×200": 940.0
+    }
+  },
+  {
+    "id": "hotel-microfiber-pillow",
+    "name": "مخدة فندقية - ميكروفايبر (هيفين)",
+    "price": 750.0,
+    "category": "إكسسوارات",
+    "subCategory": "وسائد",
+    "sizeMode": "single",
+    "sizes": [
+      "مقاس واحد"
+    ],
+    "lengths": [],
+    "images": [
+      "https://bedjanssen.com/cdn/shop/files/mkhd-fndky-mykrofaybr-9449775.png?v=1774815072&width=1356"
+    ],
+    "image": "https://bedjanssen.com/cdn/shop/files/mkhd-fndky-mykrofaybr-9449775.png?v=1774815072&width=1356",
+    "url": "https://bedjanssen.com/products/janssen-microfiber-pillow",
+    "reviewCount": 0,
+    "fallbackImage": "assets/images/mattress-placeholder.svg",
+    "pricesByWidth": {
+      "مقاس واحد": 750.0
+    }
+  },
+  {
+    "id": "memory-foam-standard-pillow",
+    "name": "مخدة ميمورى فوم استاندر",
+    "price": 850.0,
+    "category": "إكسسوارات",
+    "subCategory": "وسائد",
+    "sizeMode": "single",
+    "sizes": [
+      "مقاس واحد"
+    ],
+    "lengths": [],
+    "images": [
+      "https://bedjanssen.com/cdn/shop/files/mkhd-mymor-fom-astandr-3880277.png?v=1774815073&width=1356"
+    ],
+    "image": "https://bedjanssen.com/cdn/shop/files/mkhd-mymor-fom-astandr-3880277.png?v=1774815073&width=1356",
+    "url": "https://bedjanssen.com/products/memory-foam-pillow",
+    "reviewCount": 0,
+    "fallbackImage": "assets/images/mattress-placeholder.svg",
+    "pricesByWidth": {
+      "مقاس واحد": 850.0
+    }
+  },
+  {
+    "id": "fiber-mattress-topper",
+    "name": "مرتبة تطرية فايبر",
+    "price": 1170.0,
+    "category": "إكسسوارات",
+    "subCategory": "مراتب تطرية",
+    "sizeMode": "width",
+    "sizes": [
+      "90",
+      "100",
+      "120",
+      "140",
+      "150",
+      "160",
+      "170",
+      "180",
+      "200"
+    ],
+    "lengths": [],
+    "images": [
+      "https://eg-rv.homzmart.net/catalog/product/M/T/MTDL10X20-ENV.jpg"
+    ],
+    "image": "https://eg-rv.homzmart.net/catalog/product/M/T/MTDL10X20-ENV.jpg",
+    "url": "https://bedjanssen.com/products/fiber-mattress-topper",
+    "reviewCount": 0,
+    "fallbackImage": "assets/images/mattress-placeholder.svg",
+    "pricesByWidth": {
+      "90": 1170.0,
+      "100": 1290.0,
+      "120": 1550.0,
+      "140": 1810.0,
+      "150": 1940.0,
+      "160": 2070.0,
+      "170": 2200.0,
+      "180": 2330.0,
+      "200": 2590.0
+    }
+  },
+  {
+    "id": "memory-foam-contour-pillow",
+    "name": "مخدة ميمورى فوم كونتور",
+    "price": 1200.0,
+    "category": "إكسسوارات",
+    "subCategory": "وسائد",
+    "sizeMode": "single",
+    "sizes": [
+      "مقاس واحد"
+    ],
+    "lengths": [],
+    "images": [
+      "https://bedjanssen.com/cdn/shop/files/mkhd-mymor-fom-kontor-6923580.png?v=1774815071&width=1356"
+    ],
+    "image": "https://bedjanssen.com/cdn/shop/files/mkhd-mymor-fom-kontor-6923580.png?v=1774815071&width=1356",
+    "url": "https://bedjanssen.com/products/memory-foam-contour-pillow",
+    "reviewCount": 0,
+    "fallbackImage": "assets/images/mattress-placeholder.svg",
+    "pricesByWidth": {
+      "مقاس واحد": 1200.0
+    }
+  },
+  {
+    "id": "memory-foam-mattress-topper",
+    "name": "مرتبة تطرية ميموري فوم – طبقة إضافية لمراتب السرير",
+    "price": 4390.0,
+    "category": "إكسسوارات",
+    "subCategory": "مراتب تطرية",
+    "sizeMode": "full",
+    "sizes": [
+      "90×190",
+      "90×195",
+      "90×200",
+      "100×190",
+      "100×195",
+      "100×200",
+      "120×190",
+      "120×195",
+      "120×200",
+      "140×195",
+      "140×200",
+      "150×190",
+      "150×195",
+      "150×200",
+      "160×190",
+      "160×195",
+      "160×200",
+      "170×190",
+      "170×195",
+      "170×200",
+      "180×190",
+      "180×195",
+      "180×200",
+      "200×190",
+      "200×195",
+      "200×200"
+    ],
+    "lengths": [],
+    "images": [
+      "https://bedjanssen.com/cdn/shop/files/mrtb-ttry-mymor-fom-1070686.png?v=1774815126&width=1356"
+    ],
+    "image": "https://bedjanssen.com/cdn/shop/files/mrtb-ttry-mymor-fom-1070686.png?v=1774815126&width=1356",
+    "url": "https://bedjanssen.com/products/memory-foam-mattress-topper",
+    "reviewCount": 0,
+    "fallbackImage": "assets/images/mattress-placeholder.svg",
+    "pricesBySize": {
+      "90×190": 4390.0,
+      "90×195": 4390.0,
+      "90×200": 4390.0,
+      "100×190": 4880.0,
+      "100×195": 4880.0,
+      "100×200": 4880.0,
+      "120×190": 5860.0,
+      "120×195": 5860.0,
+      "120×200": 5860.0,
+      "140×195": 6840.0,
+      "140×200": 6840.0,
+      "150×190": 7320.0,
+      "150×195": 7320.0,
+      "150×200": 7320.0,
+      "160×190": 7810.0,
+      "160×195": 7810.0,
+      "160×200": 7810.0,
+      "170×190": 8300.0,
+      "170×195": 8300.0,
+      "170×200": 8300.0,
+      "180×190": 8790.0,
+      "180×195": 8790.0,
+      "180×200": 8790.0,
+      "200×190": 9770.0,
+      "200×195": 9770.0,
+      "200×200": 9770.0
+    }
+  },
+  {
+    "id": "hotel-microfiber-topper",
+    "name": "مرتبة تطرية فندقية - ميكروفايبر",
+    "price": 2650.0,
+    "category": "إكسسوارات",
+    "subCategory": "مراتب تطرية",
+    "sizeMode": "full",
+    "sizes": [
+      "90×190",
+      "90×195",
+      "90×200",
+      "100×190",
+      "100×195",
+      "100×200",
+      "120×190",
+      "120×195",
+      "120×200",
+      "140×190",
+      "140×195",
+      "140×200",
+      "150×190",
+      "150×195",
+      "150×200",
+      "160×190",
+      "160×195",
+      "160×200",
+      "170×190",
+      "170×195",
+      "170×200",
+      "180×190",
+      "180×195",
+      "180×200",
+      "200×190",
+      "200×195",
+      "200×200"
+    ],
+    "lengths": [],
+    "images": [
+      "https://bedjanssen.com/cdn/shop/files/mrtb-ttry-fndky-mykrofaybr-1980464.png?v=1774815072&width=1356"
+    ],
+    "image": "https://bedjanssen.com/cdn/shop/files/mrtb-ttry-fndky-mykrofaybr-1980464.png?v=1774815072&width=1356",
+    "url": "https://bedjanssen.com/products/microfiber-topper",
+    "reviewCount": 0,
+    "fallbackImage": "assets/images/mattress-placeholder.svg",
+    "pricesBySize": {
+      "90×190": 2650.0,
+      "90×195": 2650.0,
+      "90×200": 2650.0,
+      "100×190": 2940.0,
+      "100×195": 2940.0,
+      "100×200": 2940.0,
+      "120×190": 3530.0,
+      "120×195": 3530.0,
+      "120×200": 3530.0,
+      "140×190": 4120.0,
+      "140×195": 4120.0,
+      "140×200": 4120.0,
+      "150×190": 4420.0,
+      "150×195": 4420.0,
+      "150×200": 4420.0,
+      "160×190": 4700.0,
+      "160×195": 4700.0,
+      "160×200": 4700.0,
+      "170×190": 5000.0,
+      "170×195": 5000.0,
+      "170×200": 5000.0,
+      "180×190": 5290.0,
+      "180×195": 5290.0,
+      "180×200": 5290.0,
+      "200×190": 5880.0,
+      "200×195": 5880.0,
+      "200×200": 5880.0
+    }
+  },
+  {
+    "id": "hotel-microfiber-quilt",
+    "name": "اللحاف الفندقى - ميكروفايبر",
+    "price": 2050.0,
+    "category": "إكسسوارات",
+    "subCategory": "ألحفة",
+    "sizeMode": "full",
+    "sizes": [
+      "180×220",
+      "220×240"
+    ],
+    "lengths": [],
+    "images": [
+      "https://bedjanssen.com/cdn/shop/files/allhaf-alfndk-mykrofaybr-1033177.png?v=1774815072&width=1356"
+    ],
+    "image": "https://bedjanssen.com/cdn/shop/files/allhaf-alfndk-mykrofaybr-1033177.png?v=1774815072&width=1356",
+    "url": "https://bedjanssen.com/products/janssen-microfiber-quilt",
+    "reviewCount": 0,
+    "fallbackImage": "assets/images/mattress-placeholder.svg",
+    "pricesBySize": {
+      "180×220": 2050.0,
+      "220×240": 2730.0
+    }
+  },
+  {
+    "id": "fiber-quilt",
+    "name": "لحاف فايبر",
+    "price": 940.0,
+    "category": "إكسسوارات",
+    "subCategory": "ألحفة",
+    "sizeMode": "full",
+    "sizes": [
+      "180×220",
+      "220×240"
+    ],
+    "lengths": [],
+    "images": [
+      "https://bedjanssen.com/cdn/shop/files/fiberquilt_800x.jpg?v=1706366398"
+    ],
+    "image": "https://bedjanssen.com/cdn/shop/files/fiberquilt_800x.jpg?v=1706366398",
+    "url": "https://bedjanssen.com/products/fiber-quilt",
+    "reviewCount": 0,
+    "fallbackImage": "assets/images/mattress-placeholder.svg",
+    "pricesBySize": {
+      "180×220": 940.0,
+      "220×240": 1260.0
+    }
+  },
+  {
+    "id": "memory-foam-gel-pillow",
+    "name": "مخدة ميمورى فوم جيل",
+    "price": 1500.0,
+    "category": "إكسسوارات",
+    "subCategory": "وسائد",
+    "sizeMode": "single",
+    "sizes": [
+      "مقاس واحد"
+    ],
+    "lengths": [],
+    "images": [
+      "https://bedjanssen.com/cdn/shop/files/mkhd-mymor-fom-gyl-7060689.png?v=1774815072&width=1356"
+    ],
+    "image": "https://bedjanssen.com/cdn/shop/files/mkhd-mymor-fom-gyl-7060689.png?v=1774815072&width=1356",
+    "url": "https://bedjanssen.com/products/memory-foam-cooling-gel-pillow",
+    "reviewCount": 0,
+    "fallbackImage": "assets/images/mattress-placeholder.svg",
+    "pricesByWidth": {
+      "مقاس واحد": 1500.0
+    }
   }
 ];

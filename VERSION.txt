@@ -1,1 +1,1 @@
-V29 - checkout delivery areas + Vodafone Cash number + branch map links
+V32 - Ocean Fiber Pillow image fallback updated
