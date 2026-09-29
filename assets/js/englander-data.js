@@ -4,7 +4,7 @@ window.ENGLANDER_PRODUCTS = [
     "name": "واقى مرتبة ضد المياة",
     "brand": "إنجلندر",
     "brandKey": "englander",
-    "price": 940.0,
+    "price": 430.0,
     "reviewCount": 0,
     "sourceUrl": "https://englander-eg.com/products/water-proof-mattress-protector",
     "images": [
@@ -14,37 +14,37 @@ window.ENGLANDER_PRODUCTS = [
     "fallbackImage": "assets/images/products/englander/englander-fallback.svg",
     "category": "إكسسوارات",
     "subCategory": "واقيات مراتب",
-    "sizeMode": "full",
+    "sizeMode": "width",
     "sizes": [
-      "90 × 200 سم",
-      "100 × 200 سم",
-      "120 × 200 سم",
-      "140 × 200 سم",
-      "150 × 200 سم",
-      "160 × 200 سم",
-      "170 × 200 سم",
-      "180 × 200 سم",
-      "200 × 200 سم"
+      "90",
+      "100",
+      "120",
+      "140",
+      "150",
+      "160",
+      "170",
+      "180",
+      "200"
     ],
-    "pricesBySize": {
-      "90 × 200 سم": 940.0,
-      "100 × 200 سم": 840.0,
-      "120 × 200 سم": 800.0,
-      "140 × 200 سم": 750.0,
-      "150 × 200 سم": 700.0,
-      "160 × 200 سم": 660.0,
-      "170 × 200 سم": 560.0,
-      "180 × 200 سم": 470.0,
-      "200 × 200 سم": 430.0
-    },
-    "officialSpecs": "منتج إنجلندر حسب المقاس/النوع المحدد في الكتالوج."
+    "officialSpecs": "منتج إنجلندر حسب المقاس/النوع المحدد في الكتالوج.",
+    "pricesByWidth": {
+      "90": 430.0,
+      "100": 470.0,
+      "120": 560.0,
+      "140": 660.0,
+      "150": 700.0,
+      "160": 750.0,
+      "170": 800.0,
+      "180": 840.0,
+      "200": 940.0
+    }
   },
   {
     "id": "eng-mrtbh-fyskwbydk-mrtbh-tbyh-mymwry-fwm-wswst-mnfslh-englander-egypt",
     "name": "مرتبة فيسكوبيدك — مرتبة طبية ميموري فوم وسوست منفصلة | Englander Egypt",
     "brand": "إنجلندر",
     "brandKey": "englander",
-    "price": 23760.0,
+    "price": 10690.0,
     "reviewCount": 0,
     "sourceUrl": "https://englander-eg.com/products/visco-pedic-mattress",
     "images": [
@@ -73,15 +73,15 @@ window.ENGLANDER_PRODUCTS = [
       "200"
     ],
     "pricesByWidth": {
-      "90": 23760.0,
-      "100": 21390.0,
-      "120": 20190.0,
-      "140": 19000.0,
+      "90": 10690.0,
+      "100": 11880.0,
+      "120": 14260.0,
+      "140": 16630.0,
       "150": 17820.0,
-      "160": 16630.0,
-      "170": 14260.0,
-      "180": 11880.0,
-      "200": 10690.0
+      "160": 19000.0,
+      "170": 20190.0,
+      "180": 21390.0,
+      "200": 23760.0
     },
     "height": "27 سم",
     "officialSpecs": "سوست منفصلة • طبقات وخامات إنجلندر الرسمية حسب الموديل • تستخدم من الوجهين أو الوجه الواحد حسب الموديل."
@@ -128,10 +128,10 @@ window.ENGLANDER_PRODUCTS = [
     "subCategory": "وسائد",
     "sizeMode": "single",
     "sizes": [
-      "مقاس واحد"
+      "استاندر"
     ],
     "pricesBySize": {
-      "مقاس واحد": 850.0
+      "استاندر": 850.0
     },
     "officialSpecs": "منتج إنجلندر حسب المقاس/النوع المحدد في الكتالوج."
   },
@@ -140,7 +140,7 @@ window.ENGLANDER_PRODUCTS = [
     "name": "مرتبة فيكتوريا — مرتبة سوست منفصلة | Englander Egypt",
     "brand": "إنجلندر",
     "brandKey": "englander",
-    "price": 16520.0,
+    "price": 7440.0,
     "reviewCount": 0,
     "sourceUrl": "https://englander-eg.com/products/victoria",
     "images": [
@@ -169,15 +169,15 @@ window.ENGLANDER_PRODUCTS = [
       "200"
     ],
     "pricesByWidth": {
-      "90": 16520.0,
-      "100": 14870.0,
-      "120": 14040.0,
-      "140": 13210.0,
+      "90": 7440.0,
+      "100": 8260.0,
+      "120": 9910.0,
+      "140": 11560.0,
       "150": 12390.0,
-      "160": 11560.0,
-      "170": 9910.0,
-      "180": 8260.0,
-      "200": 7440.0
+      "160": 13210.0,
+      "170": 14040.0,
+      "180": 14870.0,
+      "200": 16520.0
     },
     "height": "27 سم",
     "officialSpecs": "سوست منفصلة • طبقات وخامات إنجلندر الرسمية حسب الموديل • تستخدم من الوجهين أو الوجه الواحد حسب الموديل."
@@ -197,12 +197,12 @@ window.ENGLANDER_PRODUCTS = [
     "fallbackImage": "assets/images/products/englander/englander-fallback.svg",
     "category": "إكسسوارات",
     "subCategory": "وسائد",
-    "sizeMode": "single",
+    "sizeMode": "full",
     "sizes": [
-      "مقاس واحد"
+      "كونتور"
     ],
     "pricesBySize": {
-      "مقاس واحد": 1200.0
+      "كونتور": 1200.0
     },
     "officialSpecs": "منتج إنجلندر حسب المقاس/النوع المحدد في الكتالوج."
   },
@@ -211,7 +211,7 @@ window.ENGLANDER_PRODUCTS = [
     "name": "مرتبة تطرية ميمورى فوم",
     "brand": "إنجلندر",
     "brandKey": "englander",
-    "price": 9770.0,
+    "price": 4390.0,
     "reviewCount": 0,
     "sourceUrl": "https://englander-eg.com/products/memory-foam-mattress-topper",
     "images": [
@@ -239,15 +239,15 @@ window.ENGLANDER_PRODUCTS = [
       "200"
     ],
     "pricesByWidth": {
-      "90": 9770.0,
-      "100": 8790.0,
-      "120": 8300.0,
-      "140": 7810.0,
+      "90": 4390.0,
+      "100": 4880.0,
+      "120": 5860.0,
+      "140": 6840.0,
       "150": 7320.0,
-      "160": 6840.0,
-      "170": 5860.0,
-      "180": 4880.0,
-      "200": 4390.0
+      "160": 7810.0,
+      "170": 8300.0,
+      "180": 8790.0,
+      "200": 9770.0
     },
     "height": "5 سم",
     "officialSpecs": "مرتبة تطرية تضاف فوق المرتبة الأساسية • السعر يعتمد على العرض فقط."
@@ -257,7 +257,7 @@ window.ENGLANDER_PRODUCTS = [
     "name": "مرتبة ليدى — مرتبة طبية سوست متصلة | Englander Egypt",
     "brand": "إنجلندر",
     "brandKey": "englander",
-    "price": 11450.0,
+    "price": 5150.0,
     "reviewCount": 0,
     "sourceUrl": "https://englander-eg.com/products/lady",
     "images": [
@@ -286,61 +286,25 @@ window.ENGLANDER_PRODUCTS = [
       "200"
     ],
     "pricesByWidth": {
-      "90": 11450.0,
-      "100": 10300.0,
-      "120": 9730.0,
-      "140": 9170.0,
+      "90": 5730.0,
+      "100": 5150.0,
+      "120": 6870.0,
+      "140": 8020.0,
       "150": 8590.0,
-      "160": 8020.0,
-      "170": 6870.0,
-      "180": 5150.0,
-      "200": 5730.0
+      "160": 9170.0,
+      "170": 9730.0,
+      "180": 10300.0,
+      "200": 11450.0
     },
     "height": "25 سم",
     "officialSpecs": "سوست متصلة • طبقات وخامات إنجلندر الرسمية حسب الموديل • تستخدم من الوجهين."
-  },
-  {
-    "id": "eng-mrtbh-hwny-mwn-mrtbh-swst-mnfslh-blatks-tbyay-englander-egypt",
-    "name": "مرتبة هونى مون — مرتبة سوست منفصلة بلاتكس طبيعي | Englander Egypt",
-    "brand": "إنجلندر",
-    "brandKey": "englander",
-    "price": 29630.0,
-    "reviewCount": 0,
-    "sourceUrl": "https://englander-eg.com/products/honey-moon",
-    "images": [
-      "https://englander-eg.com/cdn/shop/files/honeymoon.png?v=1732826182&width=1500"
-    ],
-    "image": "https://englander-eg.com/cdn/shop/files/honeymoon.png?v=1732826182&width=1500",
-    "fallbackImage": "assets/images/products/englander/englander-fallback.svg",
-    "category": "سوست منفصلة",
-    "subCategory": "سوست منفصلة",
-    "sizeMode": "width",
-    "sizes": [
-      "90",
-      "100",
-      "120",
-      "140"
-    ],
-    "lengths": [
-      "190",
-      "195",
-      "200"
-    ],
-    "pricesByWidth": {
-      "90": 29630.0,
-      "100": 26150.0,
-      "120": 24400.0,
-      "140": 20920.0
-    },
-    "height": "27 سم",
-    "officialSpecs": "سوست منفصلة • طبقات وخامات إنجلندر الرسمية حسب الموديل • تستخدم من الوجهين أو الوجه الواحد حسب الموديل."
   },
   {
     "id": "eng-mrtbh-marfy",
     "name": "مرتبة مارفى",
     "brand": "إنجلندر",
     "brandKey": "englander",
-    "price": 14340.0,
+    "price": 7160.0,
     "reviewCount": 0,
     "sourceUrl": "https://englander-eg.com/products/marvy",
     "images": [
@@ -368,15 +332,15 @@ window.ENGLANDER_PRODUCTS = [
       "200"
     ],
     "pricesByWidth": {
-      "90": 14340.0,
-      "100": 12900.0,
-      "120": 12180.0,
-      "140": 11470.0,
+      "90": 7160.0,
+      "100": 8610.0,
+      "120": 10040.0,
+      "140": 10750.0,
       "150": 10750.0,
-      "160": 10750.0,
-      "170": 10040.0,
-      "180": 8610.0,
-      "200": 7160.0
+      "160": 11470.0,
+      "170": 12180.0,
+      "180": 12900.0,
+      "200": 14340.0
     },
     "height": "20 سم",
     "officialSpecs": "سوست منفصلة • طبقات وخامات إنجلندر الرسمية حسب الموديل • تستخدم من الوجهين أو الوجه الواحد حسب الموديل."
@@ -397,12 +361,12 @@ window.ENGLANDER_PRODUCTS = [
     "fallbackImage": "assets/images/products/englander/englander-fallback.svg",
     "category": "إكسسوارات",
     "subCategory": "وسائد",
-    "sizeMode": "single",
+    "sizeMode": "full",
     "sizes": [
-      "مقاس واحد"
+      "چيل"
     ],
     "pricesBySize": {
-      "مقاس واحد": 1500.0
+      "چيل": 1500.0
     },
     "officialSpecs": "منتج إنجلندر حسب المقاس/النوع المحدد في الكتالوج."
   },
@@ -411,7 +375,7 @@ window.ENGLANDER_PRODUCTS = [
     "name": "مرتبة سيزونال — مرتبة سوست متصلة بطبقة قطن | Englander Egypt",
     "brand": "إنجلندر",
     "brandKey": "englander",
-    "price": 10580.0,
+    "price": 4760.0,
     "reviewCount": 0,
     "sourceUrl": "https://englander-eg.com/products/seasonal",
     "images": [
@@ -439,15 +403,15 @@ window.ENGLANDER_PRODUCTS = [
       "200"
     ],
     "pricesByWidth": {
-      "90": 10580.0,
-      "100": 9520.0,
-      "120": 8990.0,
-      "140": 8460.0,
+      "90": 4760.0,
+      "100": 5290.0,
+      "120": 7410.0,
+      "140": 6350.0,
       "150": 7940.0,
-      "160": 6350.0,
-      "170": 7410.0,
-      "180": 5290.0,
-      "200": 4760.0
+      "160": 8460.0,
+      "170": 8990.0,
+      "180": 9520.0,
+      "200": 10580.0
     },
     "height": "25 سم",
     "officialSpecs": "سوست متصلة • طبقات وخامات إنجلندر الرسمية حسب الموديل • تستخدم من الوجهين."
@@ -457,7 +421,7 @@ window.ENGLANDER_PRODUCTS = [
     "name": "مرتبة اطفال",
     "brand": "إنجلندر",
     "brandKey": "englander",
-    "price": 1175.0,
+    "price": 865.0,
     "reviewCount": 0,
     "sourceUrl": "https://englander-eg.com/products/baby-cot-mattress",
     "images": [
@@ -469,12 +433,12 @@ window.ENGLANDER_PRODUCTS = [
     "subCategory": "مراتب أطفال",
     "sizeMode": "full",
     "sizes": [
-      "120×60×10سم",
-      "140×70×10سم"
+      "120 × 60 × 10 سم",
+      "140 × 70 × 10 سم"
     ],
     "pricesBySize": {
-      "120×60×10سم": 1175.0,
-      "140×70×10سم": 865.0
+      "120 × 60 × 10 سم": 1175.0,
+      "140 × 70 × 10 سم": 865.0
     },
     "officialSpecs": "فوم ناعم • غطاء مقاوم للماء وقابل للإزالة والغسل"
   },
@@ -483,7 +447,7 @@ window.ENGLANDER_PRODUCTS = [
     "name": "مرتبة تطرية فايبر",
     "brand": "إنجلندر",
     "brandKey": "englander",
-    "price": 2590.0,
+    "price": 1170.0,
     "reviewCount": 0,
     "sourceUrl": "https://englander-eg.com/products/fiber-mattress-topper",
     "images": [
@@ -511,15 +475,15 @@ window.ENGLANDER_PRODUCTS = [
       "200"
     ],
     "pricesByWidth": {
-      "90": 2590.0,
-      "100": 2330.0,
-      "120": 2200.0,
-      "140": 2070.0,
+      "90": 1170.0,
+      "100": 1290.0,
+      "120": 1550.0,
+      "140": 1810.0,
       "150": 1940.0,
-      "160": 1810.0,
-      "170": 1550.0,
-      "180": 1290.0,
-      "200": 1170.0
+      "160": 2070.0,
+      "170": 2200.0,
+      "180": 2330.0,
+      "200": 2590.0
     },
     "height": "5 سم",
     "officialSpecs": "مرتبة تطرية تضاف فوق المرتبة الأساسية • السعر يعتمد على العرض فقط."
@@ -529,7 +493,7 @@ window.ENGLANDER_PRODUCTS = [
     "name": "مرتبة سيتى",
     "brand": "إنجلندر",
     "brandKey": "englander",
-    "price": 11260.0,
+    "price": 5060.0,
     "reviewCount": 0,
     "sourceUrl": "https://englander-eg.com/products/city",
     "images": [
@@ -563,14 +527,14 @@ window.ENGLANDER_PRODUCTS = [
     ],
     "height": "15 / 20 / 25 سم",
     "pricesByWidth": {
-      "90": 11260.0,
-      "100": 10140.0,
-      "120": 9580.0,
-      "140": 9010.0,
-      "150": 8450.0,
-      "160": 7880.0,
-      "170": 5630.0,
-      "180": 5060.0
+      "90": 5060.0,
+      "100": 5630.0,
+      "120": 7880.0,
+      "140": 8450.0,
+      "150": 9010.0,
+      "160": 9580.0,
+      "170": 10140.0,
+      "180": 11260.0
     },
     "officialSpecs": "إسفنج ريبوند طبي كثافة 90 • قماش دبل نت • تستخدم من الجانبين • الارتفاعات 15، 20، 25 سم"
   },
@@ -579,7 +543,7 @@ window.ENGLANDER_PRODUCTS = [
     "name": "مرتبة تطرية ميكروفايبر",
     "brand": "إنجلندر",
     "brandKey": "englander",
-    "price": 5880.0,
+    "price": 2650.0,
     "reviewCount": 0,
     "sourceUrl": "https://englander-eg.com/products/micro-fiber-mattress-topper",
     "images": [
@@ -607,15 +571,15 @@ window.ENGLANDER_PRODUCTS = [
       "200"
     ],
     "pricesByWidth": {
-      "90": 5880.0,
-      "100": 5290.0,
-      "120": 5000.0,
-      "140": 4700.0,
+      "90": 2650.0,
+      "100": 2940.0,
+      "120": 3530.0,
+      "140": 4120.0,
       "150": 4420.0,
-      "160": 4120.0,
-      "170": 3530.0,
-      "180": 2940.0,
-      "200": 2650.0
+      "160": 4700.0,
+      "170": 5000.0,
+      "180": 5290.0,
+      "200": 5880.0
     },
     "height": "5 سم",
     "officialSpecs": "مرتبة تطرية تضاف فوق المرتبة الأساسية • السعر يعتمد على العرض فقط."
@@ -625,7 +589,7 @@ window.ENGLANDER_PRODUCTS = [
     "name": "مرتبة كارس — مرتبة طبية سوست متصلة بإسفنج ريبوند | Englander Egypt",
     "brand": "إنجلندر",
     "brandKey": "englander",
-    "price": 12620.0,
+    "price": 5670.0,
     "reviewCount": 0,
     "sourceUrl": "https://englander-eg.com/products/caress",
     "images": [
@@ -653,15 +617,15 @@ window.ENGLANDER_PRODUCTS = [
       "200"
     ],
     "pricesByWidth": {
-      "90": 12620.0,
-      "100": 11350.0,
-      "120": 10720.0,
-      "140": 10090.0,
+      "90": 7570.0,
+      "100": 6300.0,
+      "120": 5670.0,
+      "140": 9450.0,
       "150": 9450.0,
-      "160": 9450.0,
-      "170": 5670.0,
-      "180": 6300.0,
-      "200": 7570.0
+      "160": 10090.0,
+      "170": 10720.0,
+      "180": 11350.0,
+      "200": 12620.0
     },
     "height": "27 سم",
     "officialSpecs": "سوست متصلة • طبقات وخامات إنجلندر الرسمية حسب الموديل • تستخدم من الوجهين."
@@ -697,7 +661,7 @@ window.ENGLANDER_PRODUCTS = [
     "name": "مرتبة كارس بيلوتوب",
     "brand": "إنجلندر",
     "brandKey": "englander",
-    "price": 14800.0,
+    "price": 6660.0,
     "reviewCount": 0,
     "sourceUrl": "https://englander-eg.com/products/caress-pillow-top",
     "images": [
@@ -725,15 +689,15 @@ window.ENGLANDER_PRODUCTS = [
       "200"
     ],
     "pricesByWidth": {
-      "90": 14800.0,
-      "100": 13330.0,
-      "120": 12580.0,
-      "140": 11850.0,
+      "90": 6660.0,
+      "100": 7410.0,
+      "120": 8880.0,
+      "140": 10360.0,
       "150": 11110.0,
-      "160": 10360.0,
-      "170": 8880.0,
-      "180": 7410.0,
-      "200": 6660.0
+      "160": 11850.0,
+      "170": 12580.0,
+      "180": 13330.0,
+      "200": 14800.0
     },
     "height": "29 سم",
     "officialSpecs": "سوست متصلة • طبقات وخامات إنجلندر الرسمية حسب الموديل • تستخدم من الوجهين."
@@ -772,15 +736,15 @@ window.ENGLANDER_PRODUCTS = [
       "200"
     ],
     "pricesByWidth": {
-      "90": 5260.0,
-      "100": 11680.0,
-      "120": 10510.0,
-      "140": 9940.0,
+      "90": 5840.0,
+      "100": 7020.0,
+      "120": 8180.0,
+      "140": 8760.0,
       "150": 9350.0,
-      "160": 8760.0,
-      "170": 8180.0,
-      "180": 7020.0,
-      "200": 5840.0
+      "160": 9940.0,
+      "170": 10510.0,
+      "180": 11680.0,
+      "200": 5260.0
     },
     "height": "28 سم",
     "officialSpecs": "سوست متصلة • طبقات وخامات إنجلندر الرسمية حسب الموديل • تستخدم من الوجهين."

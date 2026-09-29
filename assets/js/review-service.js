@@ -78,5 +78,15 @@
     try{const r=await fetch(API_URL+'?action=reviews',{cache:'no-store'});const j=await r.json();if(j&&j.success&&Array.isArray(j.reviews))return j.reviews;}catch(e){}
     return getLocal().filter(x=>x.status==='Approved');
   }
-  window.JANSSEN_REVIEWS={submit,approved,getLocal,imageUrl,imageFallbackUrl,imageOpenUrl,attachImageClick};
+  function showSuccess(){
+    document.getElementById('reviewSuccessToast')?.remove();
+    const el=document.createElement('div');
+    el.id='reviewSuccessToast';
+    el.className='review-success-toast';
+    el.innerHTML='<div class=\"review-success-card\"><span class=\"review-success-icon\">✓</span><div>شكرًا على المراجعة ❤️</div></div>';
+    document.body.appendChild(el);
+    requestAnimationFrame(()=>el.classList.add('open'));
+    setTimeout(()=>{el.classList.remove('open');setTimeout(()=>el.remove(),250)},3500);
+  }
+  window.JANSSEN_REVIEWS={submit,approved,getLocal,imageUrl,imageFallbackUrl,imageOpenUrl,attachImageClick,showSuccess};
 })();
