@@ -1,7 +1,7 @@
 (function(){
   const key='janssen_cart';
   const API_URL='https://script.google.com/macros/s/AKfycbw4b8TyQlShSQJ72xL_dPoklH7gp65D2yQBRV9Jt5BMLfW76d9yDwTeLM2LeXHJQp0Jdg/exec';
-  const products=window.JANSSEN_PRODUCTS||[];
+  const products=window.STORE_PRODUCTS||window.JANSSEN_PRODUCTS||[];
   const root=document.getElementById('cartItems');
   const recommendationRoot=document.getElementById('cartRecommendation');
   // Change this ID whenever you want to control the featured upsell product.
@@ -12,7 +12,7 @@
   const updateCount=()=>document.querySelectorAll('.cart-count').forEach(x=>x.textContent=get().reduce((n,i)=>n+Number(i.qty||0),0));
   function currentTotal(){return get().reduce((t,i)=>t+(Number(i.price)||0)*(Number(i.qty)||0),0);}
   function selectedPayment(){return document.querySelector('input[name="payment"]:checked')?.value||'Cash on Delivery';}
-  function transferNumber(){return selectedPayment()==='Vodafone Cash'?'01000081600':'01014158303';}
+  function transferNumber(){return selectedPayment()==='Vodafone Cash'?'01014158303':'01014158303';}
   function syncTransferNumber(){const el=document.getElementById('transferNumber');if(el)el.textContent=transferNumber();}
 
   function normalizePhone(value){
@@ -42,7 +42,7 @@
 
     const width=String(p.sizes?.[0]||'');
     const length=String(p.lengths?.[0]||'');
-    const price=Number(p.pricesByWidth?.[width]??p.price)||0;
+    const price=Number(p.pricesByWidth?.[width]??p.pricesBySize?.[width]??p.price)||0;
     recommendationRoot.innerHTML=`<section class="cart-recommendation" aria-label="اقتراح إضافي">
       <div class="recommendation-copy"><span class="section-kicker">اقتراح لك</span><h2>قد يناسبك أيضًا</h2><p>ممكن تضيف المنتج ده لطلبك قبل تأكيد الشراء.</p></div>
       <div class="recommendation-card">
@@ -153,7 +153,7 @@
     try{
       const orderId=reserveOrderId();
       const screenshot=payment==='Cash on Delivery'?null:await compressImage(file);
-      const payload={customer:name,phone,address,notes,payment,orderId,items:cart.map(i=>({product:i.name,width:i.width,length:i.length,qty:Number(i.qty),total:(Number(i.price)||0)*Number(i.qty)})),total:currentTotal()};
+      const payload={customer:name,phone,address,notes,payment,orderId,items:cart.map(i=>({product:(i.brand?i.brand+' — ':'')+i.name,width:i.width,length:i.length,qty:Number(i.qty),total:(Number(i.price)||0)*Number(i.qty)})),total:currentTotal()};
       const form=new URLSearchParams();
       form.set('customer',payload.customer);form.set('phone',payload.phone);form.set('address',payload.address);form.set('notes',payload.notes);form.set('payment',payload.payment);form.set('orderId',payload.orderId);form.set('items',JSON.stringify(payload.items));form.set('total',String(payload.total));
       if(screenshot){form.set('screenshotData',screenshot.data);form.set('screenshotName',screenshot.name);}

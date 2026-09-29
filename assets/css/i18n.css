@@ -1,0 +1,14 @@
+html[dir="ltr"] body{direction:ltr}
+html[dir="ltr"] .hero-copy,html[dir="ltr"] .category-card,html[dir="ltr"] .product-body,html[dir="ltr"] .about-copy,html[dir="ltr"] .info-card,html[dir="ltr"] .map-placeholder,html[dir="ltr"] .footer-bottom,html[dir="ltr"] .cart-recommendation,html[dir="ltr"] .recommendation-card,html[dir="ltr"] .compare-table,html[dir="ltr"] .compare-toolbar,html[dir="ltr"] .product-info,html[dir="ltr"] .product-extra,html[dir="ltr"] .product-reviews-section,html[dir="ltr"] .catalog-card,html[dir="ltr"] .brand-choice-card{direction:ltr;text-align:left}
+html[dir="ltr"] .section-head>div{text-align:left;direction:ltr}
+html[dir="ltr"] .nav-search{direction:ltr;margin-right:0;margin-left:2px}
+html[dir="ltr"] .category-link{right:auto;left:28px}
+html[dir="ltr"] .mobile-menu{right:auto;left:0;transform:translateX(-105%);box-shadow:25px 0 60px rgba(0,0,0,.16)}
+html[dir="ltr"] .mobile-menu.open{transform:translateX(0)}
+html[dir="ltr"] .footer-bottom{direction:ltr}
+html[dir="ltr"] .location-grid,html[dir="ltr"] .about-grid{direction:ltr}
+html[dir="ltr"] .compare-label,html[dir="ltr"] .compare-cell,html[dir="ltr"] .compare-head-product{border-left:0;border-right:1px solid var(--line)}
+html[dir="ltr"] .compare-head,.compare-row{direction:ltr}
+.lang-switch{display:inline-flex;align-items:center;justify-content:center;min-width:72px;height:38px;padding:0 12px;border:1px solid var(--line);border-radius:999px;background:#fff;color:var(--blue);font-weight:900;font-size:12px;cursor:pointer;white-space:nowrap;box-shadow:0 5px 15px rgba(20,30,50,.05)}
+.lang-switch:hover{border-color:#aab8d0;background:#f7f9fc}
+@media(max-width:1150px){.lang-switch{min-width:64px;height:36px;font-size:11px}}
